@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO 11 Membuat dan menyusun layout dengan nama item_layout.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="bio_data"
+            type="com.nandaadisaputra.learnroomdatabase.database.BioDataModel" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_2sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:color="@color/backgroundColorButton"
+                android:padding="@dimen/_16sdp"
+                android:text="@{bio_data.name}"
+                android:textColor="@color/textColorButton"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
+
+
+
+
+
+
+

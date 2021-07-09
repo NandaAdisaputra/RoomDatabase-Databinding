@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO 1 buat resource dengan nama background_switch_dark_mode.xml di dalam package drawable-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--TODO 2 Ketika Switch ada aksi klik -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/blueTrack" />
+            <!--membuat lengkungan pada background-->
+            <corners android:radius="@dimen/_100sdp" />
+            <!--membuat border pada background-->
+            <stroke android:width="@dimen/_1sdp"
+                android:color="@android:color/white" />
+            <size android:height="@dimen/_20sdp" />
+        </shape>
+    </item>
+    <!--TODO 3 Ketika Switch tidak ada aksi klik-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/greyColor" />
+            <corners android:radius="@dimen/_100sdp" />
+            <stroke android:width="@dimen/_1sdp"
+                android:color="@android:color/black" />
+            <size android:height="@dimen/_20sdp" />
+        </shape>
+    </item>
+</selector>
+    <!--Created by Nanda Adisaputra (Android Developer)-->

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LearnRoomDatabase</string>
+    <string name="add_data">Tambah</string>
+    <string name="delete_data">Delete</string>
+    <string name="edit_data">Edit</string>
+    <string name="enter_username">Masukkan Username</string>
+    <string name="save_data">Simpan</string>
+</resources>
+
+
