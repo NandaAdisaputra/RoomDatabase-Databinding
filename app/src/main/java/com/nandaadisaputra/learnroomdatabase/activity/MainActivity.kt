@@ -36,6 +36,8 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, EditBiodataActivity::class.java).apply {
                     putExtra("id", it.id)
                     putExtra("name", it.name)
+                    //TODO 59  Kita tambahkan intent dengan data dengan membawa data photo
+                    putExtra("photo", it.photo)
                 }
                 startActivity(intent)
             }

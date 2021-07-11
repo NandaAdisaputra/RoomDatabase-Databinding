@@ -9,7 +9,7 @@ interface BioDataDao {
     @Insert
     fun insertData(bioData: BioDataModel)
 
-    @Query("SELECT* FROM BioDataModel")
+    @Query("SELECT * FROM BioDataModel")
     fun getAll(): LiveData<List<BioDataModel>>
 
     @Update

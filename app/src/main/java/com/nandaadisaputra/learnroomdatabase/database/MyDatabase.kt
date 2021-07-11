@@ -13,7 +13,7 @@ import androidx.room.RoomDatabase
 @Database(
         entities = [BioDataModel::class],
         //versi database
-        version = 1,
+        version = 3,
         // exportSchema untuk export jadi file, misal file JSON
         exportSchema = false
 )

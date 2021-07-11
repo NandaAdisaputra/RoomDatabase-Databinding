@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--TODO 13 Membuat Class AddDataActivity,kt kemudian menyusun Layout di activity_add_data.xml -->
+<?xml version="1.0" encoding="utf-8"?><!--TODO 13 Membuat Class AddDataActivity,kt kemudian menyusun Layout di activity_add_data.xml -->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -14,6 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_add_profile"
+            android:onClick="openGallery"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@color/blueTrack"
+            android:contentDescription="@string/photo_profile" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/add_user_name_text_input_layout"

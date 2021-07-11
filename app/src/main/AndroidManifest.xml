@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.nandaadisaputra.learnroomdatabase">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +17,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnRoomDatabase"
         tools:ignore="AllowBackup">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.nandaadisaputra.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+
         <activity android:name=".activity.EditBiodataActivity" />
         <!-- TODO 52 Semua activity harus terdaftar di AndroidManifest.xml agar dapat di eksekusi -->
         <activity android:name=".activity.AddDataActivity" />
