@@ -8,11 +8,8 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import com.nandaadisaputra.learnroomdatabase.R
 import com.nandaadisaputra.learnroomdatabase.adapter.BioDataAdapter
-import com.nandaadisaputra.learnroomdatabase.database.BioDataModel
 import com.nandaadisaputra.learnroomdatabase.database.MyDatabase
 import com.nandaadisaputra.learnroomdatabase.databinding.ActivityMainBinding
-import org.jetbrains.anko.longToast
-import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
@@ -56,7 +53,7 @@ class MainActivity : AppCompatActivity() {
     fun addData(view: View) {
         // Kita intent kan menggunakan library anko common yang telah Kita tambahkan di build gradle
         // agar lebih ringkas
-        startActivity<AddDataActivity>()
+        startActivity<AddBioDataActivity>()
     }
 }
 

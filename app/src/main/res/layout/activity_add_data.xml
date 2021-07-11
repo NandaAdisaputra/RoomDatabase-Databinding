@@ -6,7 +6,7 @@
 
         <variable
             name="activity"
-            type="com.nandaadisaputra.learnroomdatabase.activity.AddDataActivity" />
+            type="com.nandaadisaputra.learnroomdatabase.activity.AddBioDataActivity" />
     </data>
 
     <LinearLayout
@@ -16,7 +16,7 @@
 
         <ImageView
             android:id="@+id/iv_add_profile"
-            android:onClick="openGallery"
+            android:onClick="addPhotoProfile"
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
             android:layout_gravity="center"

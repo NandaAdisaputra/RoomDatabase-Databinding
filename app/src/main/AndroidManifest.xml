@@ -30,7 +30,7 @@
 
         <activity android:name=".activity.EditBiodataActivity" />
         <!-- TODO 52 Semua activity harus terdaftar di AndroidManifest.xml agar dapat di eksekusi -->
-        <activity android:name=".activity.AddDataActivity" />
+        <activity android:name=".activity.AddBioDataActivity" />
         <!-- MainActivity akan dieksekusi pertama kali karena sebagai MAIN LAUNCHER didalam AndroidManifest.xml -->
         <activity android:name=".activity.MainActivity">
             <intent-filter>
