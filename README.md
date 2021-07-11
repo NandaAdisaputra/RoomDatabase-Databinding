@@ -7,3 +7,5 @@ Yang ada di dalamnya diantaranya :
 6. Switch light mode dan dark mode untuk menggunakan fitur dark mode
 7. UX button ketika di klik maka akan menampilkan warna menjadi lebih gelap dan
    kembali kewarna semula ketika button di lepas
+8. Upload image dari Gallery menggunakan Room Database (hanya bisa upload icon dan logo ya karena Room Database ada limit nya).
+   
